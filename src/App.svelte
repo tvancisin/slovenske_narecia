@@ -26,7 +26,7 @@
 
     // Load and add GeoJSON data
     try {
-      const response = await fetch("zahorie.geojson"); // Replace with your GeoJSON file path
+      const response = await fetch("zahorie_simplified.json"); // Replace with your GeoJSON file path
       const geojsonData = await response.json();
 
       // Add GeoJSON layer to the map
