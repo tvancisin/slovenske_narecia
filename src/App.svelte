@@ -14,7 +14,8 @@
       zoom: 8,
       layers: [
         L.tileLayer(
-          "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+          // "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+          "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
           {
             attribution:
               '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -32,9 +33,9 @@
       L.geoJSON(geojsonData, {
         style: (feature) => {
           return {
-            color: "yellow", // Border color
+            color: "black", // Border color
             weight: 1, // Border thickness
-            fillColor: "yellow", // Fill color
+            fillColor: "black", // Fill color
             fillOpacity: 0.3, // Adjust fill opacity
           };
         },
